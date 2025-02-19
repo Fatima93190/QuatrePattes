@@ -444,10 +444,7 @@ label, input, select, textarea{
     width: 100%;
     padding-bottom: 1%;
 }
-#send {
-    width: 100%;
-    margin-top: 1%;
-}
+
 input, select, textarea {
     padding: 2%;
     background: #FFFFFF;
@@ -455,6 +452,8 @@ input, select, textarea {
     border-radius: 5px;
 }
 #send {
+    width: 100%;
+    padding: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,10 +462,8 @@ input, select, textarea {
     margin-top: 5%;
     background-color: #08956A;
     border-radius: 5px;
-}
-#send img {
-    max-width: 30px;
-    max-height: 30px;
+    border: none;
+    font-weight: bold;
 }
 @media (min-width: 770px) and (max-width: 1280px) {
     nav a {
