@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Maquette_QuatrePattes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Accueil_QuatrePattes</title>
 </head>
 <body>
     <header>
-        <img src="Maquette_QuatrePattes/logo_svg.svg" alt="logo_quatre_pattes">
+        <img src="images/logo_svg.svg" alt="logo_quatre_pattes">
         <nav>
             <a href="#sec1">Accueil</a>
             <a href="contact.html">Contact</a>
-            <button type="button">faire un don</button>
+            <a href="#sec2" class="btn"><img src="images/heart_don.svg" alt="icon_de_coeur pour un don">faire un don</a>
         </nav>
     </header>
     <main>
@@ -24,55 +27,177 @@
             <h2>Faites un don</h2>
             <div class="container">
                 <div class="div1">
-                    <div class="div_child1">
-                        <p>10£</p>
-                        <p>permet de nourrir 5 animaux pendant une journée</p>
+                    <div class="div_child">
+                        <p class="p1">10£</p>
+                        <p class="p2">permet de nourrir 5 animaux pendant une journée</p>
                     </div>
-                    <div class="div_child2">
-                        <p>20£</p>
-                        <p>permet d’héberger un animal sauvage pendant une nuit</p>
+                    <div class="div_child">
+                        <p class="p1">20£</p>
+                        <p class="p2">permet d’héberger un animal sauvage pendant une nuit</p>
                     </div>
-                    <div class="div_child3">
-                        <p>50£</p>
-                        <p>permet de financer les soins vétérinaires complets pour un animal</p>
+                    <div class="div_child">
+                        <p class="p1">50£</p>
+                        <p class="p2">permet de financer les soins vétérinaires complets pour un animal</p>
                     </div>
                 </div>
                 <div class="div2">
-                    <div class="div_don1">
+                    <div class="div_don">
                         <p>Une fois</p>
                     </div>
-                    <div class="div_don2">
+                    <div class="div_don">
                         <p>Mensuel</p>
                     </div>
-                    <div class="div_don3">
+                    <div class="div_don">
                         <p>Annuel</p>
                     </div>
                 </div>
                 <div class="div3">
+                    <img src="images/heart_don.svg" alt="icon_de_coeur pour un don">
                     <p>Faire un don de 50£/mois</p>
                 </div>
             </div>
         </section>
         <section id="sec3" class="section">
-            <div class="mission1">
-                <img src="Maquette_QuatrePattes/Image_Notre_mission.jpg" alt="Image_Notre_mission">
-            </div>
-            <div class="mission2">
-                <h3>Notre Mission</h3>
-                <p>Depuis 2010, Quatre Pattes oeuvre sans relache pour la protection et le bien-etre des animaux en France . Notre mission est double : secourir les  animaux en détresse et sensibiliser le public à la cause animale.<br><br>
+            <div class="mission">
+                <div class="mission1">
+                    <img src="images/Image_Notre_mission.jpg" alt="Image_Notre_mission">
+                </div>
+                <div class="mission2">
+                    <h3>Notre Mission</h3>
+                    <p>Depuis 2010, Quatre Pattes oeuvre sans relache pour la protection et le bien-etre des animaux en France . Notre mission est double : secourir les  animaux en détresse et sensibiliser le public à la cause animale.<br><br>
 
                     Chaque année , nous prenons en charge plus de 1000 animaux abandonnés, maltraités ou blessés , Grace à notre réseau de familles d’accueil et nos partenariats avec des refuges, nous leur offrons une seconde chance.<br><br>
                     
                     Voutre soutien est essenciel pour continuer notre mission. Ensemble, nous pouvons faire la différence pour ces etres qui comptent sur nous</p>
+                </div>
             </div>
         </section>
-        <section id="sec4" class="section"></section>
-        <section id="sec5" class="section"></section>
-        <section id="sec6" class="section"></section>
-        <section id="sec7" class="section"></section>
+        <section id="sec4" class="section">
+            <h2>Histoires de  Réussite</h2>
+            <div id="sec4_big_img" class="sec4_big_img_backgound">
+                <div class="paragraphs_sec4" id="show_text">
+                    <p class="sec4_p1_big_img">Luna</p>
+                    <p class="sec4_p2_big_img">Trouvée dans la rue avec une patte cassée, Luna a été soignée et retrouvé sa joie de vivre. Elle coule maintenant des jours  heureux dans sa nouvelle famille.</p>
+                    <p class="sec4_p3_big_img">Janvier 2024</p>
+                </div>
+            </div>
+            <div class="sec4_small_img_histoire">
+                <div id="div_Luna" class="div_small_img">
+                    <p>Luna</p>
+                    <p class="text_cache">Abandonné dans une foret, Oscar était terrifié par les humains. Après des mois de patience et d’amour, il est devenu un chat confiant et affectueux.</p>
+                    <p class="text_cache">Mars 2024</p>
+                </div>
+                <div id="div_Oscar" class="div_small_img">
+                    <p>Oscar</p>
+                    <p class="text_cache">Abandonné dans une foret, Oscar était terrifié par les humains. Après des mois de patience et d’amour, il est devenu un chat confiant et affectueux.</p>
+                    <p class="text_cache">Mars 2024</p>
+                </div>
+                <div id="div_Max" class="div_small_img">
+                    <p>Max</p>
+                    <p class="text_cache">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo aut alias, dignissimos odio fugit quisquam architecto assumenda! Dicta sequi ab fugit delectus.</p>
+                    <p class="text_cache">juin 2024</p>
+                </div>
+            </div>
+        </section>
+        <section id="sec5" class="section">
+            <h2>Testez Vos Connaissance</h2>
+            <div class="div_container_test">
+                <p>Les associations gardent la majorité des dons pour leur fonctionnement</p>
+                <div class="div_test">
+                    <div class="vrai">
+                        <p>Vrai, les associations utilisent plus de 50% des dons pour leur frais de fonctionnement</p>
+                    </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="div_container_test">
+                <p>Les refuges ne prennent que les animaux en bonne santé</p>
+                <div class="div_test">
+                    <div class="vrai">
+                        <p>Vrai, ils refusent les animaux malades car c’est trop couteux</p>
+                    </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="div_container_test">
+                <p>Les associations ont trop de moyens grace aux dons</p>
+                <div class="div_test">
+                    <div class="vrai">
+                        <p>Vrai, elles reçoivent beaucoup d’argent des donateurs</p>
+                    </div>
+                    <div class="faux">
+                        <p>Faux</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec6" class="section">
+            <h2>Notre Impact</h2>
+            <div class="container_impact">
+                <div class="div_icons">
+                    <img src="images/icon_refuges.svg" alt="icon_maison">
+                    <p  class="p1_impact">50+ Refuges</p>
+                    <p class="p2_impact">Partenaires à travers la France</p>
+                </div>
+                <div class="div_icons">
+                    <img src="images/icon_patte_animal.svg" alt="icon_patte_animal">
+                    <p class="p1_impact">1000+ Animaux</p>
+                    <p class="p2_impact">Sauvés chaque année</p>
+                </div>
+                <div class="div_icons">
+                    <img src="images/icon_repas.svg" alt="icon_repas">
+                    <p  class="p1_impact">10 000+ Repas</p>
+                    <p class="p2_impact">Distribués par mois</p>
+                </div>
+            </div>
+        </section>
+        <section id="sec7" class="section">
+            <h2>Témoignages</h2>
+            <div class="container_temoignage">
+                <div class="temoignage">
+                    <img src="images/Image_Témoignage_Refuge_Lyon.jpg" alt="Image_Témoignage_Refuge_Lyon">
+                    <div class="temoignage_p">
+                        <p class="p1_temoignage">“Grace aux dons, nous avons pu accueillir plus de 200 animaux cette année et leur offrir une  seconde chance.”</p>
+                        <p class="p2_temoignage">Refuge des Quatre Pattes - Lyon</p>
+                    </div>
+                </div>
+                <div class="temoignage">
+                    <img src="images/Image_Témoignage_Refuge_Marseille.jpg" alt="Image_Témoignage_Refuge_Marseille">
+                    <div class="temoignage_p">
+                        <p class="p1_temoignage">“Le soutien de Quatre Pattes nous permet de maintenir notre mission de protection des animaux sauvages en détresse.”</p>
+                        <p class="p2_temoignage">Sanctuaire Animal - Marseille</p>
+                    </div>
+                </div>
+                <div class="temoignage">
+                    <img src="images/Image_Témoignage_Refuge_Paris.jpg" alt="Image_Témoignage_Refuge_Paris">
+                    <div class="temoignage_p">
+                        <p class="p1_temoignage">“Chaque don compte et nous aide à offrir un avenir meilleur aux animaux abandonnés.”</p>
+                        <p class="p2_temoignage">Refuge du Soleil - Paris</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="div_footer">
+            <p class="p1_footer">Quatre Pattes</p>
+            <p class="p2_footer">Ensemble, protégeons les animaux et donnons-leur un vie meilleure.</p>
+        </div>
+        <div class="div_footer">
+            <p class="p1_footer">Contact</p>
+            <div class="footer_contact">
+                <img src="images/icon_message.svg" alt="icon_message">
+                <p class="p2_footer">contact@quatrepattes.org</p>
+            </div>
+        </div>
+        <div class="div_footer">
+            <p class="p1_footer">Suivez-nous</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
