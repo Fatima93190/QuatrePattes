@@ -17,7 +17,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50vw;
+    width: 30vw;
     padding: 1vw;
 }
 nav a {
@@ -105,6 +105,7 @@ h2{
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 #sec2 .div1 .div_child:hover {
@@ -120,7 +121,6 @@ h2{
     padding: 1%;
 }
 #sec2 .container .div2 .div_don {
-    background: #FFFFFF;
     border: 1px solid #D9D9D9;
     border-radius: 15px;
     padding: 1%;
@@ -129,11 +129,15 @@ h2{
     font-size: 24px;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
-#sec2 .container .div2 .div_don:hover {
-    background: #0BB97F;
+#sec2 .container .div2 .div_don:hover{
     border: 1px solid #D9D9D9;
+    background-color: #08956A;
     color: white;
+}
+#sec2  .div_child.select_div1, #sec2 .div_don.select_div2{
+    background: #8affc8;
 }
 #sec2 .container .div3 {
     display: flex;
@@ -191,7 +195,7 @@ h2{
  }
  #sec4 .sec4_big_img_backgound {
     padding: 10%;
-    min-height: 60vh;
+    min-height: 50vh;
     width: 80%;
     height: auto;
     background-repeat: no-repeat;
@@ -203,15 +207,12 @@ h2{
  #sec4 #sec4_big_img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(images/ImageDeLuna.jpg);
 } 
-#sec4 .text_cache {
-    display: none;
-}
 #sec4 .paragraphs_sec4 {
     position: absolute;
     display: flex;
     align-content: flex-end;
-    margin-top: 19%;
-    margin-right: 1%;
+    bottom: 33%;
+    margin: auto;
     height: 20%;
     flex-direction: column;
     color: white;
@@ -245,6 +246,7 @@ h2{
     background-size: cover;
     background-position:center;
     border-radius: 15px;
+    cursor: pointer;
 }
 #sec4 .sec4_small_img_histoire #div_Luna {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(images/ImageDeLuna.jpg);
@@ -256,7 +258,6 @@ h2{
 #sec4 .sec4_small_img_histoire #div_Max {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(images/ImagedeMax.jpg);
 }
-
 #sec5 {
     display: flex;
     justify-content: center;
@@ -388,7 +389,6 @@ h2{
 footer {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     flex-direction: row;
     gap: 30px;
     padding-left: 5vw;
@@ -422,7 +422,6 @@ footer .p2_footer {
 }
 
 /*page contact*/
-
 #contact {
     display: flex;
     justify-content: center;
@@ -444,7 +443,6 @@ label, input, select, textarea{
     width: 100%;
     padding-bottom: 1%;
 }
-
 input, select, textarea {
     padding: 2%;
     background: #FFFFFF;
@@ -466,8 +464,12 @@ input, select, textarea {
     font-weight: bold;
 }
 @media (min-width: 770px) and (max-width: 1280px) {
+    nav {
+        width: 35vw;
+        gap: 10px;
+    }
     nav a {
-        font-size: 20px;
+        font-size: 19px;
     }
     nav .btn {
         font-size: 15px;
@@ -516,9 +518,6 @@ input, select, textarea {
      #sec4 .sec4_p1_big_img {
         font-size: 30px;
      }
-     #sec4 .paragraphs_sec4 {
-        margin-top: 29%;
-    }
      #sec4 .sec4_p2_big_img , .sec4_p3_big_img {
         font-size: 18px;
      }
@@ -568,8 +567,7 @@ input, select, textarea {
     }
     header {
         flex-direction: column;
-        width: 100vw;
-        padding: 1%;
+        width: 100%;
     }
     header img {
         max-width: 150px;
@@ -585,6 +583,7 @@ input, select, textarea {
         font-size: 15px;
     }
     nav .btn {
+        width: 94%;
         font-size: 13px;
         margin-right: 20px;
     }
@@ -592,7 +591,7 @@ input, select, textarea {
         margin: 0;
     }
     #sec1 {
-        width: 100vw;
+        width: 100%;
         padding: 0;
         text-wrap: wrap;
     }
@@ -655,7 +654,7 @@ input, select, textarea {
         font-size: 14px;
     }
     #sec4 .paragraphs_sec4 {
-        margin-top: 39%;
+        bottom: 39%;
     }
     #sec4 .sec4_small_img_histoire {
         font-size: 20px;
