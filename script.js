@@ -62,3 +62,37 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 //section 5 de la quiz: tester vos connaissance
+let choix_vrai1 = document.getElementById("vrai1");
+let choix_faux1 = document.getElementById("faux1");
+let choix_vrai2 = document.getElementById("vrai2");
+let choix_faux2 = document.getElementById("faux2");
+let choix_vrai3 = document.getElementById("vrai3");
+let choix_faux3 = document.getElementById("faux3");
+let score_final = document.getElementById("score_final");
+let nbr = 0;
+
+function gestion_des_reponses(choix_vrai, choix_faux, text) {
+    choix_vrai.addEventListener('click', function(){
+        choix_vrai.classList.add('incorrect');
+        choix_vrai.textContent = text;
+        choix_faux.style.display = "none";
+        affichage_score_final();
+    });
+    choix_faux.addEventListener('click', () => {
+        choix_vrai.classList.add('correct');
+        choix_vrai.textContent = text;
+        choix_faux.style.display = "none";
+        nbr++;
+        affichage_score_final();
+    });
+}
+
+gestion_des_reponses(choix_vrai1, choix_faux1, "Faux ! Chez Quatre Pattes, 85% des dons sont directement  utilisés pour les animaux. Seuls 15% servent aux frais de fonctionnement essentiels.");
+gestion_des_reponses(choix_vrai2, choix_faux2, "Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !");
+gestion_des_reponses(choix_vrai3, choix_faux3, "Faux ! Les besoins sont immenses et constants Chaque don est précieux pour sauver plus d’animaux");
+
+
+function affichage_score_final(){
+    score_final.classList.add('score_final');
+    score_final.innerHTML = "le nombre des bonnes réponses est : " + nbr;
+}

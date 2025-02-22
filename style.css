@@ -291,9 +291,6 @@ h2{
  }
 
  #sec5 .div_test .vrai,  #sec5 .div_test .faux{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -302,6 +299,22 @@ h2{
     width: 100%;
     background: #F3F4F6;
     padding: 1%;
+ }
+ .correct {
+    background-color : #EDFEF6;
+    border : 3px solid #188F63;
+ }
+ .incorrect {
+    background-color : #ffd9d9;
+    border : 3px solid #ff0000;
+ }
+ .score_final {
+    padding: 1vw;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
  }
 
  #sec6 {
@@ -434,8 +447,7 @@ footer .p2_footer {
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    padding: 2vw;
-    
+    padding: 2vw;  
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     color:  #6D6B6B;
 }
@@ -443,6 +455,7 @@ label, input, select, textarea{
     width: 100%;
     padding-bottom: 1%;
 }
+
 input, select, textarea {
     padding: 2%;
     background: #FFFFFF;
@@ -527,7 +540,7 @@ input, select, textarea {
     #sec5 .div_container_test {
         font-size: 18px;
     }
-    #sec5 .div_test .vrai,  #sec5 .div_test .faux{
+    #sec5 .div_test .vrai,  #sec5 .div_test .faux, #sec5 .score_final {
         font-size: 16px;
     }
     #sec6 .div_icons img {
@@ -662,7 +675,7 @@ input, select, textarea {
     #sec5 .div_container_test {
         font-size: 14px;
     }
-    #sec5 .div_test .vrai,  #sec5 .div_test .faux{
+    #sec5 .div_test .vrai,  #sec5 .div_test .faux, #sec5 .score_final{
         font-size: 13px;
     }
     #sec6 .container_impact {
