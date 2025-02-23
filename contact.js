@@ -51,6 +51,6 @@ function validation() {
     }
 
     if (isValid){
-        alert ("The form has been successfully submitted! <br> thank you !")
+        alert ("The form has been successfully submitted! \nThank you !")
     }
 }
