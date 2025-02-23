@@ -14,7 +14,7 @@ function give(element) {
     affichage();
 }
 
-    function abounnement(element) {
+    function abonnement(element) {
         document.querySelectorAll('.div_don').forEach(div => {
             div.classList.remove('select_div2');
         });
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
-//section 5 de la quiz: tester vos connaissance
+//section 5, la quiz: tester vos connaissance
 let choix_vrai1 = document.getElementById("vrai1");
 let choix_faux1 = document.getElementById("faux1");
 let choix_vrai2 = document.getElementById("vrai2");

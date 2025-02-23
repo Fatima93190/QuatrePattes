@@ -88,17 +88,6 @@ h2{
     flex-direction: row;
     gap: 20px;
 }
-#sec2 .div1 .div_child .p1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin: 5px;
-}
-
-#sec2 .div1 .div_child .p2 {
-    color: #6D6B6B;
-    font-size: 24px;
-}
-
 #sec2 .div1 .div_child {
     text-align: center;
     padding: 1%;
@@ -107,10 +96,18 @@ h2{
     border-radius: 15px;
     cursor: pointer;
 }
-
 #sec2 .div1 .div_child:hover {
     background: #EDFEF6;
     border: 3px solid #188F63;   
+}
+#sec2 .div1 .div_child .p1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+}
+#sec2 .div1 .div_child .p2 {
+    color: #6D6B6B;
+    font-size: 24px;
 }
 #sec2 .container .div2 {
     display: flex;
@@ -158,13 +155,13 @@ h2{
     height: auto;
 }
 
- #sec3 {
+#sec3 {
     display: flex;
     justify-content: center;
     padding: 5vw;
     background-color: #E0FCEE;
- }
- .mission {
+}
+.mission {
     display: flex;
     flex-direction: row;
     border-radius: 15px;
@@ -299,13 +296,14 @@ h2{
     width: 100%;
     background: #F3F4F6;
     padding: 1%;
+    cursor: pointer;
  }
- .correct {
+ #sec5 .div_test .vrai.correct {
     background-color : #EDFEF6;
     border : 3px solid #188F63;
  }
- .incorrect {
-    background-color : #ffd9d9;
+ #sec5 .div_test .vrai.incorrect {
+    background-color : #fff5f5;
     border : 3px solid #ff0000;
  }
  .score_final {
@@ -462,6 +460,9 @@ input, select, textarea {
     border: 1px solid #6D6B6B;
     border-radius: 5px;
 }
+.err {
+    color: #ff0000;
+}
 #send {
     width: 100%;
     padding: 2%;
@@ -500,13 +501,7 @@ input, select, textarea {
         font-size: 30px;
     }
     
-    #sec2 .div1 .div_child .p2 {
-        font-size: 15px;
-    }
-    #sec2 .container .div2 .div_don {
-        font-size: 15px;
-    }
-    #sec2 .container .div3 {
+    #sec2 .div1 .div_child .p2,  #sec2 .div2 .div_don, #sec2 .container .div3 {
         font-size: 15px;
     }
     #sec2 .container .div3 img{
@@ -629,13 +624,7 @@ input, select, textarea {
         font-size: 20px;
     }
     
-    #sec2 .div1 .div_child .p2 {
-        font-size: 13px;
-    }
-    #sec2 .container .div2 .div_don {
-        font-size: 13px;
-    }
-    #sec2 .container .div3 {
+    #sec2 .div1 .div_child .p2, #sec2 .div2 .div_don, #sec2 .container .div3{
         font-size: 13px;
     }
     #sec2 .container .div3 img{
@@ -662,7 +651,7 @@ input, select, textarea {
         font-size: 20px;
         font-weight: bold;
     }
-    #sec4 .sec4_p2_big_img , .sec4_p3_big_img {
+    #sec4 .sec4_p2_big_img ,#sec4 .sec4_p3_big_img {
         font-weight: 400;
         font-size: 14px;
     }

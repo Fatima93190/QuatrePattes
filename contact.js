@@ -9,7 +9,7 @@ function isValidEmail(email){
     let chaine=/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return chaine.test(String(email).toLowerCase());
     }
-//pour verifier si les champs sont rempli par l'utilisateur ou non (dans ce cas on affiche les message d'erreur)
+//pour verifier si les champs sont rempli par l'utilisateur ou non (dans ce cas on affiche les messages d'erreur)
 function validation() {
     let name = document.getElementById('username').value;
     let email = document.getElementById('mail').value;
